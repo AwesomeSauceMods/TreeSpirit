@@ -11,6 +11,7 @@ import net.minecraft.entity.player.EntityPlayer
 import net.minecraft.tileentity.TileEntity
 import net.minecraftforge.common.util.ForgeDirection
 import com.awesomesauce.minecraft.forge.treespirit.core.api.TreeSpiritTree
+import com.awesomesauce.minecraft.forge.core.lib.util.vec.ISidePosition
 
 class TileEntityTreeCore extends TileEntity with TTreePart with TActivatedTileEntity {
   var blocksToTest = scala.collection.mutable.Set[ISidePosition]()

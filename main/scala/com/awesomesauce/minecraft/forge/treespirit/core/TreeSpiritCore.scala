@@ -3,7 +3,7 @@ package com.awesomesauce.minecraft.forge.treespirit.core
 import com.awesomesauce.minecraft.forge.core.lib.TAwesomeSauceMod
 import com.awesomesauce.minecraft.forge.core.lib.util.ItemUtil
 import com.awesomesauce.minecraft.forge.treespirit.core.te.TileEntityTreeCore
-import cpw.mods.fml.common.Mod
+import cpw.mods.fml.common.{ModMetadata, Mod}
 import cpw.mods.fml.common.event.FMLInitializationEvent
 import cpw.mods.fml.common.event.FMLPostInitializationEvent
 import cpw.mods.fml.common.event.FMLPreInitializationEvent
@@ -31,6 +31,8 @@ object TreeSpiritCore extends TAwesomeSauceMod {
   var treePlanks: Block = null
   def getModID: String = MODID
   def getModName: String = MODNAME
+  @Mod.Metadata(MODID)
+  var metadata : ModMetadata = null
   def getTabIconItem: () => net.minecraft.item.Item = () => magicalEssence
   def getTextureDomain: String = "treespirit"
   def preInit() = {
